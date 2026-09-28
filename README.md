@@ -5,7 +5,7 @@ Recurso educativo web para aprender, paso a paso y jugando, cómo funciona el re
 Proyecto de Taller de Investigación II — Ingeniería en Sistemas Computacionales, Instituto Tecnológico de Colima.
 Título: *Reconocimiento de patrones visuales y aprendizaje automático para la interpretación de imágenes*.
 
-## Versión actual: v1.0.0
+## Versión actual: v1.0.1
 
 | Módulo | Descripción |
 |---|---|
@@ -43,7 +43,7 @@ Se necesita internet la primera vez para descargar TensorFlow.js y el modelo. La
 
 ## Configurar el formulario de resultados
 
-En `js/datos.js`, pegar la liga del Google Form en `const FORM_URL = '';`. El formulario solo necesita una pregunta de respuesta corta: “Pega tu código de resultados”.
+En `datos.js`, pegar la liga del Google Form en `const FORM_URL = '';`. El formulario solo necesita una pregunta de respuesta corta: “Pega tu código de resultados”.
 
 Formato del código: `VL-XXXX | Edad | Exp (N/P/C) | Ocup (ISC/EST/OTR) | Inicial x/10 | Final x/10 | Lecciones | XP | Min`.
 
@@ -53,14 +53,16 @@ Sin servidor ni base de datos. El progreso se guarda solo en el navegador del di
 
 ## Estructura
 
+Todos los archivos están en la raíz del repositorio (sin carpetas) para facilitar la publicación en GitHub Pages:
+
 ```
 index.html          Estructura base y menú
-css/estilos.css     Estilos y animaciones (incluye a Pixi)
-js/datos.js         Contenido: lecciones, examen, diccionario, medallas, traducciones
-js/pixi.js          Personaje Pixi (SVG animado)
-js/ia.js            Modelo MobileNet, clasificador propio y filtro de bordes
-js/app.js           Pantallas, motor de lecciones, progreso y resultados
-manifest.json, sw.js, img/   Aplicación instalable (PWA)
+estilos.css         Estilos y animaciones (incluye a Pixi)
+datos.js            Contenido: lecciones, examen, diccionario, medallas, traducciones
+pixi.js             Personaje Pixi (SVG animado)
+ia.js               Modelo MobileNet, clasificador propio y filtro de bordes
+app.js              Pantallas, motor de lecciones, progreso y resultados
+manifest.json, sw.js, icono-192.png, icono-512.png   Aplicación instalable (PWA)
 ```
 
 ## Limitaciones conocidas

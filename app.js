@@ -3,7 +3,7 @@
  * Pantallas: bienvenida → perfil → examen inicial → camino de unidades → lecciones → examen final → resultados
  * Extras: diccionario, logros, perfil, voz de Pixi, sonidos, confeti, modo docente.
  */
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.0.1';
 const CLAVE_GUARDADO = 'visionlab_progreso_v1';
 const app = document.getElementById('app');
 const nav = document.getElementById('nav');
@@ -866,6 +866,7 @@ nav.querySelectorAll('button').forEach((b) => b.onclick = () => {
 });
 if ('speechSynthesis' in window) speechSynthesis.onvoiceschanged = () => {};
 if (E.onboarding) pantallaCamino(); else pantallaBienvenida();
+window.vlIniciada = true;
 
 // Aplicación instalable (PWA)
 if ('serviceWorker' in navigator && location.protocol !== 'file:') {
