@@ -1,0 +1,16 @@
+{
+  "name": "VisiónLab · Aprende cómo ven las computadoras",
+  "short_name": "VisiónLab",
+  "description": "Aprende reconocimiento de imágenes con inteligencia artificial, paso a paso y jugando.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F9FC",
+  "theme_color": "#2F80ED",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "img/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "img/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
